@@ -1,0 +1,20 @@
+{
+  "name": "yt-downloader",
+  "module": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "dev:no-watch": "tsx src/server.ts",
+    "build": "tsup src",
+    "start": "node src/server.js"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.3",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "tsup": "^7.2.0",
+    "tsx": "^3.13.0",
+    "ytdl-core": "^4.11.5"
+  }
+}
